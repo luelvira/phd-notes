@@ -1,0 +1,17 @@
+# Created 2025-01-24 Fri 18:21
+#+title: Wenzel2018
+#+date: [2025-01-14 Tue 11:54]
+#+author: Wenzel, Makarius
+#+HUGO_BUNDLE: /wenzel2018
+#+EXPORT_FILE_NAME: index
+#+LANGUAGE: def
+#+HUGO_BASE_DIR: ../../
+* Isabelle/jEdit as IDE for Domain-specific Formal Languages and Informal Text Documents
+
+Makarius Wenzel explores the use of Isabelle/JEdit as a IDE for both formal
+languages and informal text documents.
+
+First of all, Isabelle is an interactive theorem proving system, and JEdit is a
+text editor written in Java. Isabelle/JEdit combines both as a front-end for the
+Prover IDE (PIDE). This editor aims to support users in reading and writing
+proof documents with continuous background checking by the prover.

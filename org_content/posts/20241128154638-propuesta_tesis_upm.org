@@ -1,0 +1,103 @@
+# Created 2025-01-24 Fri 18:21
+#+title: propuesta tesis upm
+#+author: Lucas Elvira Martín
+#+HUGO_BUNDLE: propuesta tesis upm/propuesta_tesis_upm
+#+EXPORT_FILE_NAME: index
+#+LANGUAGE: def
+#+HUGO_BASE_DIR: ../../
+* Description
+** 2024-11-28
+
+
+La idea que han propuesto es la generación de un sistema para la representación
+gráfica mediante un lenguaje formal de un informe clínico. Es necesario poder
+contar con diferentes aspectos:
+
+[[file:~/Sync/Org/assets/first-system-definition-2024-11-28-1549.excalidraw.svg]]
+
+
+Como se puede ver en la imágen, el usuario, en este caso el doctor, según
+escribe el informe, el texto se va procesando a través de un intérprete de
+legunaje natural. El resultado del intérprete se pasa a un parser para que
+genere una representación en un lenguaje formal. Es necesario que el resultado
+del parser se esté validando constantemente.
+
+Para poder realizar la conversión de forma correcta, es necesario poder hacer una
+equivalencia entre lo que el doctor quiere decir, y la representación formal. Para ello
+se mapean las intenciones y se ataca a un servidor de vocabulario. Este
+vocabulario puede ser general, un lenguaje común para todos, y específico, según
+se vaya interactuando el usuario.
+
+Una vez que esté todo mapeado y modelado, procedemos a la representación visual.
+Es necesario estudiar que representaciones existen y cuales pueden resultar más
+útiles. Esta representación puede variar en función de la tarea que esté
+realizando el usuario.
+
+*Nota*: Una salida que podría tener es que, un paciente que no haya entendido bien
+su diagnóstico, puede interactuar con el sistema.
+** 2024-12-05
+En la reunión de hoy, hemos concretado que es lo que tenemos en mente cada uno.
+Para ello, me han pedido que describa el tesis en 30 segundos. De esta forma se
+puede ver si lo hemos entendido bien o no.
+
+Los puntos más importantes son:
+1. La posibilidad de poder validar por un experto (el médico) en tiempo real.
+   Actualmente, ya existen alternativas que permiten el almacenamiento de texto
+   procesado y estructurado, pero carece de la validación de un médico en el
+   tiempo en el que está escribiendo el informe.
+2. Con todo esto, se debe mirar si hay algo similar ya existente, poniendo el
+   foco en sistemas de representación de ontologías médicas e historias
+   clínicas.
+3. Mirar bien el ctakes
+** 2024-12-17
+- Relacionar efectos adversos con posibles medicamentos causantes. Relaciones
+  entre farmacos y sintomatología
+
+- Habría que poner que se pone en el centro del diagrama:
+  - patología y de ahí van colgando los datos
+
+- Posibles puntos fuertes:
+  - Realizar un resumen del informe
+  - Resumen de la evolución del paciente antes de atender al paciente
+  - El informe es evaluado y se comenta como se puede mejorar (ejemmplo, cuando
+    le pides a ChatGPT que te corrija un texto)
+
+- Cuando se buscan la relación entre entidades, sobretodo en la sintomatología
+  los médicos suelen indicar si creen que es por una enfermedad o por un medicamento.
+
+- Importante: *Pasar el comite etica de la universidad y después que lo pasen en
+  el hospital*
+
+- Clasificación snome? buen mapeado entre códigos y entidades
+- ATM es un código para fármacos. Permite identificar categorias de mayor a
+  menor. Por ejemplo solo el fármaco, el fármaco y la marca, el fármaco la marca
+  y la cantidad.
+- Existen distintos tipos de clasificaciones o etiquetas:
+  - Tratamiento
+  - Diagnostico
+  - Sintomatología
+
+- [ ] Mirar brat annotation.
+* Goals
+
+
+* Tasks
+
+** Tareas de la reunión del día [2024-11-28 Thu] [4/6]
+
+*** TODO Buscar palabras claves que permitan buscar referencias del campo de estudio
+*** TODO Ver si hay algo parecido ya hecho (Y en qué dominio)
+*** HOLD Esperar a que Mario hable del Luis (Dr de reumatología) para saber que representación les gustaría
+*** DONE Buscar información acerca de la ontología HL7
+Se trata de un conjunto de estándares  para facilitar el intercambio de
+información clínica empleando un lenguaje de notación formal (UML) y un
+metalenguaje extensible (XML). El principal problema que presenta es que es
+dificil de operar con él, por lo que se necesita de expertos en HL7 para poder
+definir una interfaz. Además, existen variaciones e incompatibilidades entre
+versiones y super posición entre los diferentes modelos [cite:@gonzalez2010] 
+*** DONE Read [cite:@West2015]
+*** DONE Read [cite:@Si2021]
+* Dates
+
+** [2024-11-28 Thu] Primera reunión -> Planteamiento del problema
+- Descripción inicial del la tesis (Description)

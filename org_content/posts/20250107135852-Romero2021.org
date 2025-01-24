@@ -1,0 +1,25 @@
+# Created 2025-01-24 Fri 18:21
+#+title: Romero2021
+#+date: [2025-01-07 Tue 13:58]
+#+author: Romero, Julien
+#+HUGO_BUNDLE: /romero2021
+#+EXPORT_FILE_NAME: index
+#+LANGUAGE: def
+#+HUGO_BASE_DIR: ../../
+* Pyformlang: An Educational Library for Formal Language Manipulation
+
+The author of this paper propose pyformlang, an alternative to JFLAP, wrote in python3
+instead of Java. The main idea of this work is to give students a tool that aims
+to help them with formal language representation. To commit this task, the
+author has used the algorithms proposed by Hopcroft in /Automata Theory,
+Languages and Computatiuon/
+
+This tools is not a fully alternative to JFAP, as, in this case, the library
+proposes a Domaine Specific Language (DSL), while JFLAP is a fully graphical
+tool to interact with formal languages. Also, there are some differences between
+both implementation. In Pyformlang, the author wanted to make it more general
+and easy to use, allowing special case in regex definition. Usually, the
+alphabet consists of all single characters (minus special ones), thus creating a
+concatenation when encountering consecutive characters. In Pyformlang, they
+considered that consecutive characters are a single symbol. So the tool has a
+more general approach not bound to text processing.

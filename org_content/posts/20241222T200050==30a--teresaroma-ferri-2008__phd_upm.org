@@ -1,0 +1,21 @@
+# Created 2025-01-24 Fri 18:21
+#+title: TeresaRoma_Ferri
+#+date: [2024-12-22 Sun 19:24]
+#+author: Lucas Elvira Martín
+#+HUGO_BUNDLE: /teresaroma
+#+EXPORT_FILE_NAME: index
+#+LANGUAGE: def
+#+HUGO_BASE_DIR: ../../
+* TeresaRoma_Ferri
+Authors highlight the importance of defining and using an ontology to classify
+clinical information. This ontology have to be operable by both people and machines.
+
+Also, they mention that currently, sharing clinical information is a complex
+challenge. Using this type of utilities helps to reduce this task because it makes
+more understandable the information.
+
+The critical issue is the inconsistent use of terminology. The same terms are
+often used to represent different concepts, while different terms may be used to
+represent the same concepts.
+
+*The relationships between terms is $n \rightarrow n$, so the context has a main role* 
