@@ -1,12 +1,11 @@
-# Created 2025-01-24 Fri 18:21
-#+title: wenzel2018 - Isabelle/jedit
-#+date: [2025-01-14 Tue 12:49]
-#+author: Lucas Elvira Martín
-#+HUGO_BUNDLE: /wenzel2018_isabellejedit
-#+EXPORT_FILE_NAME: index
-#+LANGUAGE: def
-#+HUGO_BASE_DIR: ../../
-* wenzel2018 - Isabelle/jedit
++++
+title = "wenzel2018 - Isabelle/jedit"
+author = ["Lucas Elvira Martín"]
+date = 2025-01-14T12:49:00+01:00
+draft = false
++++
+
+## wenzel2018 - Isabelle/jedit {#wenzel2018-isabelle-jedit}
 
 The paper talks about the integration between two open source tools. The first
 one is used to support in theorem proofs and the second one is an text editor

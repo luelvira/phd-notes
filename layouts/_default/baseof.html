@@ -1,0 +1,27 @@
+{{ $data := or (index .Site.Data .Site.Language.Lang).content .Site.Data.content }}
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+{{ partial "head.html" . }}
+
+<body class="body container" >
+<aside class="menu">
+  <div class="menu-content">
+  <nav>
+
+    <h2 class="brand"> {{ .Site.Title }} </h2>
+    <ul>
+      {{ $pages := site.RegularPages }}
+    {{ range site.RegularPages }}
+    <li class="link"> <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
+  </nav>
+  </div>
+</aside>
+
+<div class="page">
+{{ block "main" . }}{{ end }}
+</div>
+
+</body>
+</html>

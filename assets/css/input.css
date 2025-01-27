@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+
+
+@layer base {
+    h1 {
+        @apply text-3xl; 
+        font-weight: 400;
+        color: var(--color-slate-900);
+        margin-bottom: var(--spacing);
+
+    }
+    h2 {
+        @apply text-2xl font-bold;
+        color: var(--color-slate-800);
+    }
+    h3 {
+        @apply text-xl;
+        color: var(--color-slate-700);
+    }
+
+    h4 {
+        @apply text-base font-bold;
+        color: var(--color-slate-600);
+    }
+    p, li {
+        word-wrap: break-word;
+        @apply py-2 px-1;
+        text-align: justify;
+        color: var(--color-slate-500);
+    }
+    :is(p, ul) + :is(h3, h4) {
+        @apply py-3;
+    }
+
+    ol, ul {
+        list-style: revert;
+        padding-inline-start: calc(var(--spacing) * 10);
+    }
+    li {
+        padding-block: 0;
+        @apply text-sm;
+    }
+    
+}
+
+@layer components {
+    .container {
+        @apply grid grid-cols-8 gap-4 max-w-7xl m-auto;
+    }
+
+    .menu {
+        @apply text-sm col-span-2;
+    }
+
+    .menu-content {
+        @apply py-2 px-1;
+    }
+
+    .brand {
+        margin-bottom: calc(2 * var(--spacing));
+    }
+
+    .page {
+        @apply py-2 px-1 text-base col-span-6;
+    }
+
+    .menu-content ul {
+        padding-inline-start: var(--spacing);
+        list-style: none;
+    }
+    .link {
+        padding: var(--spacing);
+        margin: var(--spacing) 0;
+        border-radius: var(--radius-sm);
+        background-color: var(--color-slate-300);
+        color: var(--color-slate-900);
+    }
+
+    .link:hover {
+        background-color: var(--color-slate-200);
+    }
+
+    .link a {
+        display: block;
+        width: 100%;
+    }
+}
+
+@layer utility {
+    .w {
+        width: var(--container-2xl);
+        margin: auto;
+    }
+}

@@ -1,0 +1,29 @@
+<head>
+{{ partial "head/meta" . }}
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/schema.html" . }}
+  {{- if .IsHome -}}
+    <title> Home | {{ .Site.Title }}</title>
+  {{- else if .Page.Title -}}
+    <title> {{ .Page.Title }} | {{ .Site.Title }} </title>
+  {{- else -}}
+    <title> {{ .Site.Title }} </title>
+  {{- end -}}
+
+    {{ partial "head/style" }}
+<link rel="canonical" href="{{ .Permalink }}" />
+<!-- dependencies -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+{{ $langs := slice "haskell" "bnf" }}
+{{ range $langs }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/{{.}}.min.js"></script>
+{{ end }}
+<script>
+  hljs.registerAliases("cabal", {languageName: "yaml"})
+  hljs.highlightAll();
+</script>
+  {{ if .Param "math" }}
+    {{ partialCached "math.html" . }}
+  {{ end }}
+</head>

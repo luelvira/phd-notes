@@ -63,19 +63,19 @@ concise summaries. The use cases include:
 
 ### Identified Problems and Proposed Solutions {#identified-problems-and-proposed-solutions}
 
-1.  Inconsistencies in Medical Documentation
+
+#### Inconsistencies in Medical Documentation {#inconsistencies-in-medical-documentation}
 
 A significant challenge lies in the discrepancies between how different medical
 institutions and hospitals draft their reports. To address this, incorporating
 clinical entity linking or normalization techniques can standardize the
 terminology and improve interoperability.
 
-1.  Ambiguity in Clinical Concepts
+
+#### Ambiguity in Clinical Concepts {#ambiguity-in-clinical-concepts}
 
 Clinical concepts may be referenced multiple times using identical or varying
 expressions. Additionally, the same term might refer to entirely different
 concepts in different contexts. To resolve this, the system requires coreference
 resolution capabilities within the NLP model to identify and consolidate related
 references accurately.
-
-Permanent note: yada2023 - Heart: Health record timeline

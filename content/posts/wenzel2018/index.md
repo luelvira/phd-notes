@@ -1,12 +1,11 @@
-# Created 2025-01-24 Fri 18:21
-#+title: Wenzel2018
-#+date: [2025-01-14 Tue 11:54]
-#+author: Wenzel, Makarius
-#+HUGO_BUNDLE: /wenzel2018
-#+EXPORT_FILE_NAME: index
-#+LANGUAGE: def
-#+HUGO_BASE_DIR: ../../
-* Isabelle/jEdit as IDE for Domain-specific Formal Languages and Informal Text Documents
++++
+title = "Wenzel2018"
+author = ["Wenzel", "Makarius"]
+date = 2025-01-14T11:54:00+01:00
+draft = false
++++
+
+## Isabelle/jEdit as IDE for Domain-specific Formal Languages and Informal Text Documents {#isabelle-jedit-as-ide-for-domain-specific-formal-languages-and-informal-text-documents}
 
 Makarius Wenzel explores the use of Isabelle/JEdit as a IDE for both formal
 languages and informal text documents.
